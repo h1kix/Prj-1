@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="opengame(event, 'g1')">Block Breaker</button>
+  <button class="tablinks" onclick="opengame(event, 'g2')">game2</button>
+  <button class="tablinks" onclick="opengame(event, 'g3')">game3</button>
+</div>
+
+<div id="g1" class="tabcontent">
+  <h3>Block Breaker</h3>
+  
+<canvas id="myCanvas" width="640" height="480"></canvas>
+<button id="runButton">Start game</button>
+<script src="./index.js"></script>
+
+</div>
+
+<div id="g2" class="tabcontent">
+  <h3>game2</h3>
+  <!-- game2 -->
+</div>
+
+<div id="g3" class="tabcontent">
+  <h3>game3</h3>
+  <!-- game3 -->
+</div>
+
+<script>
+function opengame(evt, game) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(game).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
