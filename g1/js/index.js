@@ -19,8 +19,8 @@ const brickColumnCount = 5;
 const brickWidth = 75;
 const brickHeight = 75;
 const brickPadding = 10;
-const brickOffsetTop = 25;
-const brickOffsetLeft = 25;
+const brickOffsetTop = 20;
+const brickOffsetLeft = 20;
 const color = '#c20202';
 const txtcolor = '#ffffff'
 
