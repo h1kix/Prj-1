@@ -14,18 +14,18 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 let rightPressed = false;
 let leftPressed = false;
 
-const brickRowCount = 7;
-const brickColumnCount = 3;
+const brickRowCount = 9;
+const brickColumnCount = 5;
 const brickWidth = 75;
 const brickHeight = 75;
 const brickPadding = 10;
-const brickOffsetTop = 30;
-const brickOffsetLeft = 30;
+const brickOffsetTop = 25;
+const brickOffsetLeft = 25;
 const color = '#c20202';
 const txtcolor = '#ffffff'
 
 let score = 0;
-let lives = 3;
+let lives = 5;
 
 let bricks = [];
 

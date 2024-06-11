@@ -1,6 +1,6 @@
 const canvas = document.getElementById('game');
 const context = canvas.getContext('2d');
-const gridSize = 16;
+const gridSize = 20;
 const scoreElement = document.getElementById('score');
 
 let snake = [
